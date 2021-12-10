@@ -383,7 +383,7 @@ if app_mode =='Translator':
 
 
 if app_mode =='Face recognization':
-    import cv2 as cv2
+    import cv2 
     
     st.image(os.path.join('./images','download.jpg'),use_column_width=True )
 
