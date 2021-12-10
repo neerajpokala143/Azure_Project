@@ -441,9 +441,9 @@ if app_mode =='Face recognization':
 
         cap=cv2.VideoCapture(0)
         ret,video=cap.read()
-        detect_video=model1.detectMultiScale(video)
-        for x,y,h,w in detect_video:
-            cv2.rectangle(video,(x,y),(x+h,y+w),[0,255,0],5)
+        #detect_video=model1.detectMultiScale(video)
+        #for x,y,h,w in detect_video:
+         #   cv2.rectangle(video,(x,y),(x+h,y+w),[0,255,0],5)
 
         st.image(video,channels="BGR")
 
