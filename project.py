@@ -391,13 +391,6 @@ if app_mode =='Face recognization':
         photo_show=Image.open(photo)
         return photo_show
 
-
-
-
-    #st.title("hello")
-    #
-    #st.image(os.path.join('./','bharath.jpg'), use_column_width  = True)
-
     st.markdown("<h1 style='text-align: center; color: skyblue; '>Face detecter </h1>", unsafe_allow_html=True)
 
     
