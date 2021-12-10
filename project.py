@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import tempfile
 from PIL import Image
-import cv2
+
 
 
 st.set_page_config(layout="wide")
@@ -383,6 +383,8 @@ if app_mode =='Translator':
 
 
 if app_mode =='Face recognization':
+    import cv2
+    
     st.image(os.path.join('./images','download.jpg'),use_column_width=True )
 
 
