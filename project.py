@@ -383,14 +383,21 @@ if app_mode =='Translator':
 
 
 if app_mode =='Face recognization':
-    import cv2 
-    
+    import cv2 as cv2
     st.image(os.path.join('./images','download.jpg'),use_column_width=True )
-    
+
+
     @st.cache
     def load_image(photo):
         photo_show=Image.open(photo)
         return photo_show
+
+
+
+
+    #st.title("hello")
+    #
+    #st.image(os.path.join('./','bharath.jpg'), use_column_width  = True)
 
     st.markdown("<h1 style='text-align: center; color: skyblue; '>Face detecter </h1>", unsafe_allow_html=True)
 
@@ -442,7 +449,3 @@ if app_mode =='Face recognization':
 
         cap.release()
 
-
-
-
-    
