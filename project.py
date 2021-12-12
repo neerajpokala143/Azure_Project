@@ -435,7 +435,7 @@ if app_mode =='Face recognization':
         cv2.imwrite("myimage.jpg",images)
         #st.write(images)
         
-        st.info(lengths)
+        st.info("{} faces found".format(lengths))
         st.image(images,width=250,channels="BGR") 
 
 
