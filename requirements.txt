@@ -3,5 +3,4 @@ numpy==1.19.5
 pandas==1.2.4
 requests==2.25.1
 streamlit==1.2.0
-pyttsx3
 Pillow==8.2.0
