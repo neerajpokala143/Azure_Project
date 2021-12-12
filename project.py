@@ -32,7 +32,7 @@ app_mode = st.sidebar.selectbox('Choose the App mode',
 if app_mode =='About App':
 
     st.markdown("<h1 style='text-align: center; color: skyblue; '>Azure Application </h1>", unsafe_allow_html=True)
-    st.markdown('In this application we are using **Microsoft Azure APIS** for creating a Translator,Face recognization and Computer vision(OCR). **StreamLit** is to create the Web Graphical User Interface (GUI) ')
+    st.markdown('In this application we are using **Microsoft Azure APIS** for creating a Translator,Face recognization . **StreamLit** is to create the Web Graphical User Interface (GUI) ')
     st.markdown(
     """
     <style>
