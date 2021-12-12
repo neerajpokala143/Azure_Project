@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import tempfile
 from PIL import Image
-import pyttsx3
+
 
 
 
@@ -66,10 +66,7 @@ if app_mode =='About App':
 
 
 if app_mode =='Translator':
-    Translator=st.sidebar.button("Click me to hear about me 👈")
-    if Translator:
-        pyttsx3.speak("welcome to the translator page")
-        pyttsx3.speak("here u can translate languages as you wish")
+   
     st.image(os.path.join('./images','translator2.jpg'),use_column_width=True )
     st.markdown("<h1 style='text-align: center; color: skyblue; '>Welcome to our page Translate a language now just in no time: </h1>", unsafe_allow_html=True)
 
@@ -388,10 +385,6 @@ if app_mode =='Translator':
 
 
 if app_mode =='Face recognization':
-    face=st.sidebar.button("Click me to hear about me 👈")
-    if face:
-        pyttsx3.speak("welcome to the Face recognization page")
-        pyttsx3.speak("here u can recognize any face as you wish")
     import cv2 
     st.image(os.path.join('./images','download.jpg'),use_column_width=True )
 
