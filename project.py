@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import tempfile
 from PIL import Image
+import pyttsx3
 
 
 
@@ -65,6 +66,10 @@ if app_mode =='About App':
 
 
 if app_mode =='Translator':
+    Translator=st.sidebar.button("Click me to hear about me 👈")
+    if Translator:
+        pyttsx3.speak("welcome to the translator page")
+        pyttsx3.speak("here u can translate languages as you wish")
     st.image(os.path.join('./images','translator2.jpg'),use_column_width=True )
     st.markdown("<h1 style='text-align: center; color: skyblue; '>Welcome to our page Translate a language now just in no time: </h1>", unsafe_allow_html=True)
 
@@ -383,7 +388,11 @@ if app_mode =='Translator':
 
 
 if app_mode =='Face recognization':
-    import cv2 as cv2
+    face=st.sidebar.button("Click me to hear about me 👈")
+    if face:
+        pyttsx3.speak("welcome to the Face recognization page")
+        pyttsx3.speak("here u can recognize any face as you wish")
+    import cv2 
     st.image(os.path.join('./images','download.jpg'),use_column_width=True )
 
 
@@ -422,9 +431,11 @@ if app_mode =='Face recognization':
         faces=model.detectMultiScale(images)
 
         #st.write(faces)
-
-        for x,y,h,w in faces:
-            cv2.rectangle(images,(x,y),(x+h,y+w),[0,255,0],5)
+        if len(faces)==0:
+            st.warning("No face found")
+        else:
+            for x,y,h,w in faces:
+                cv2.rectangle(images,(x,y),(x+h,y+w),[0,255,0],5)
 
         cv2.imwrite("myimage.jpg",images)
         #st.write(images)
@@ -432,20 +443,3 @@ if app_mode =='Face recognization':
 
 
     st.markdown('---')
-
-    st.markdown('**For live Face Detection Please tap the button**')
-    button=st.button("Live Detection")
-
-    if button:
-        model1=cv2.CascadeClassifier('detect.xml')
-
-        cap=cv2.VideoCapture(0)
-        ret,video=cap.read()
-        #detect_video=model1.detectMultiScale(video)
-        #for x,y,h,w in detect_video:
-         #   cv2.rectangle(video,(x,y),(x+h,y+w),[0,255,0],5)
-
-        st.image(video,channels="BGR")
-
-        cap.release()
-
