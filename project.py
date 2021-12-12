@@ -136,7 +136,7 @@ if app_mode =='Translator':
         import requests, uuid, json
 
         # Add your subscription key and endpoint
-        subscription_key = "4079576ad66b4c7497cc6d654ec51da3"
+        subscription_key = "337c389f623c484fbb31520b6d0343a9"
         endpoint = "https://api.cognitive.microsofttranslator.com/"
 
         # Add your location, also known as region. The default is global.
@@ -242,7 +242,7 @@ if app_mode =='Translator':
         import requests, uuid, json
 
         # Add your subscription key and endpoint
-        subscription_key = "4079576ad66b4c7497cc6d654ec51da3"
+        subscription_key ="337c389f623c484fbb31520b6d0343a9"
         endpoint = "https://api.cognitive.microsofttranslator.com"
 
         # Add your location, also known as region. The default is global.
@@ -345,7 +345,7 @@ if app_mode =='Translator':
         import requests, uuid, json
 
         # Add your subscription key and endpoint
-        subscription_key = "4079576ad66b4c7497cc6d654ec51da3"
+        subscription_key = "337c389f623c484fbb31520b6d0343a9"
         endpoint = "https://api.cognitive.microsofttranslator.com"
 
         # Add your location, also known as region. The default is global.
