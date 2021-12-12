@@ -429,9 +429,13 @@ if app_mode =='Face recognization':
         else:
             for x,y,h,w in faces:
                 cv2.rectangle(images,(x,y),(x+h,y+w),[0,255,0],5)
-
+                lengths=len(faces)
+        
+        
         cv2.imwrite("myimage.jpg",images)
         #st.write(images)
+        
+        st.info(lengths)
         st.image(images,width=250,channels="BGR") 
 
 
