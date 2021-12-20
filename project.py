@@ -66,7 +66,7 @@ if app_mode =='About App':
 
 
 if app_mode =='Translator':
-   
+    st.markdown("<h1 style='text-align: center; color: skyblue; '>Overcoming language difficulties with AI and Azure services: </h1>", unsafe_allow_html=True)
     st.image(os.path.join('./images','translator2.jpg'),use_column_width=True )
     st.markdown("<h1 style='text-align: center; color: skyblue; '>Welcome to our page Translate a language now just in no time: </h1>", unsafe_allow_html=True)
 
