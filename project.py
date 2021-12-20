@@ -27,7 +27,7 @@ st.markdown(
 st.sidebar.title('Test the API powered by azure')
 st.sidebar.subheader('select API want to test')
 app_mode = st.sidebar.selectbox('Choose the App mode',
-['About App','Translator','Face recognization']
+['About App','Translator',]
 )
 if app_mode =='About App':
 
