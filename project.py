@@ -43,6 +43,10 @@ app_mode = st.sidebar.radio(
     "",
     ("About App","Translator","Face Recognization","Object Detection",),
 )
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
+
+st.sidebar.markdown('---')
+st.sidebar.write('N.V.Suresh Krishna | Neerajpokala143@gmail.com https://github.com/neerajpokala143')
 if app_mode =='About App':
 
     st.markdown("<h1 style='text-align: center; color: skyblue; '>Azure Application </h1>", unsafe_allow_html=True)
