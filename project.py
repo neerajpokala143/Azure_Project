@@ -386,7 +386,7 @@ if app_mode =='Translator':
         
 
 if app_mode=='Face Recognization':
-  st.image(os.path.join('./images','facial-recognition-software-image.jpg'),use_column_width=True )
+  st.image(os.path.join('./images','face recognition.jpg'),use_column_width=True )
   st.title("Face Recognition(Powered by Azure)")
   st.header('Face Recognition:')
   st.markdown("Using Azure I build to detect, identify and analyse faces in images.")
@@ -407,8 +407,8 @@ if app_mode=='Face Recognization':
 
     def draw_face(img):
 
-        subscription_key = 'ea8c44f876804e43ab35a26a09d59da5'  
-        BASE_URL = "https://recognition-ai.cognitiveservices.azure.com/" + '/face/v1.0/detect'  
+        subscription_key = 'd3e9a6edde2449ed8e8c2b6c8887f720'  
+        BASE_URL = "https://rajesh.cognitiveservices.azure.com/'  
         headers = {
         # Request headers
         'Content-Type': 'application/octet-stream', 
@@ -445,7 +445,7 @@ if app_mode=='Face Recognization':
     
 if app_mode =='Object Detection':
     
-    st.image(os.path.join('./images','object.jpg'),use_column_width=True )
+    st.image(os.path.join('./images','object detection.jpg'),use_column_width=True )
     st.markdown("<h1 style='text-align: center; color: skyblue; '> Object Recognition </h1>", unsafe_allow_html=True)
 
     st.title("Object Recognition(Powered by Azure)")
@@ -459,8 +459,8 @@ if app_mode =='Object Detection':
 
     if button_translate and url_file :
    
-        subscription_key = 'afac470736ce49ca8352ec7c83736fc7'
-        endpoint = 'https://objectdetection21.cognitiveservices.azure.com/'
+        subscription_key = 'fc5c67c41c41475fb28ed9b6053ebcaa'
+        endpoint = 'https://object123.cognitiveservices.azure.com/'
         
             # Add your Computer Vision subscription key and endpoint to your environment variables.
         analyze_url = endpoint + "vision/v3.1/analyze"
