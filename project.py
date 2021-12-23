@@ -41,7 +41,7 @@ st.sidebar.title('Test the API powered by azure')
 st.sidebar.subheader('select API want to test')
 app_mode = st.sidebar.radio(
     "",
-    ("About Me","Face Recognization","Object Detection","Translator"),
+    ("About App","Face Recognization","Object Detection","Translator"),
 )
 if app_mode =='About App':
 
