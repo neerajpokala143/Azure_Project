@@ -471,7 +471,7 @@ if app_mode =='Object Detection':
     st.text("Detect the objects in images")
 
     url_file =  title = st.text_input('Paste image address URL')
-    st.text("Example :- https://www.intelligentliving.co/wp-content/uploads/2019/12/sculptures-reclaimed-materials-brianmock8_201911323127.jpg")
+    st.text("Example :-https://media.istockphoto.com/photos/hungry-dog-picture-id497384624?k=20&m=497384624&s=612x612&w=0&h=1yf2i-X6-8RH1KqUtGAknainRw8rAMzuBUeCZF2gl-c=")
     button_translate=st.button('Click me',help='To give the image')
 
     if button_translate and url_file :
