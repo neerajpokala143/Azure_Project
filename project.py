@@ -408,7 +408,7 @@ if app_mode=='Face Recognization':
     def draw_face(img):
 
         subscription_key = 'd3e9a6edde2449ed8e8c2b6c8887f720'  
-        BASE_URL = "https://rajesh.cognitiveservices.azure.com/'  
+        BASE_URL = "https://rajesh.cognitiveservices.azure.com/" 
         headers = {
         # Request headers
         'Content-Type': 'application/octet-stream', 
