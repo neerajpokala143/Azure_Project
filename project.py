@@ -412,7 +412,7 @@ if app_mode=='Face Recognization':
   image_file =  st.file_uploader("Upload Images (less than 1mb)", type=["png","jpg","jpeg"])
   if image_file is not None:
     img = Image.open(image_file)
-    st.image(image_file,width=250,caption='Uploaded image')
+    #st.image(image_file,width=250,caption='Uploaded image')
     byte_io = BytesIO()
     img.save(byte_io, 'PNG')#PNG
     image = byte_io.getvalue()
