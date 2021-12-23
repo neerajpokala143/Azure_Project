@@ -418,7 +418,7 @@ if app_mode=='Face Recognization':
     image = byte_io.getvalue()
 
 
-  button_translate=st.button('Click me',help='To give the image')
+  button_translate=st.button('Click me to show recognized photo',help='To give the image')
 
   if button_translate and image_file :
 
