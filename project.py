@@ -385,7 +385,7 @@ if app_mode =='Translator':
         
         
 if app_mode=='Face Recognization':
-  st.image(os.path.join('./images','facial-recognition-software-image.jpg'),use_column_width=True )
+  st.image(os.path.join('./images','face recognition.jpg'),use_column_width=True )
   st.title("Face Recognition(Powered by Azure)")
   st.header('Face Recognition:')
   st.markdown("Using Azure I build to detect, identify and analyse faces in images.")
@@ -444,7 +444,7 @@ if app_mode=='Face Recognization':
     
 if app_mode =='Object Detection':
     
-    st.image(os.path.join('./images','object.jpg'),use_column_width=True )
+    st.image(os.path.join('./images','object detection.jpg'),use_column_width=True )
     st.markdown("<h1 style='text-align: center; color: skyblue; '> Object Recognition </h1>", unsafe_allow_html=True)
 
     st.title("Object Recognition(Powered by Azure)")
